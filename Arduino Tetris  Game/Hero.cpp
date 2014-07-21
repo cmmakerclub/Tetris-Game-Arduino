@@ -15,7 +15,8 @@ Hero::Hero() {
        SpeedLevel = SpeedLevelNormal;
 }
 
-void Hero::Update(byte *gameStep,float *deltaTime,boolean (*data)[32][16],boolean (*dataDot)[36][16],const boolean (*tetris)[7][4][4][4])
+void Hero::Update(byte *gameStep,float *deltaTime,boolean (*data)[32][16],
+  boolean (*dataDot)[36][16],const boolean (*tetris)[7][4][4][4])
 {
  
         short x,y;

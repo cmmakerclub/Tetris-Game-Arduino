@@ -6,7 +6,6 @@ class DotDisplay {
       DotDisplay();
       void Initialize() ;
       void fn_display(boolean (*data)[32][16]);
-      //void DispalyUpdate(boolean (*data)[32][16],boolean (*data2)[36][16],const boolean (*tetris)[7][4][4][4],byte *type,byte *rotate,short *posX,short *posY);
 
    private:      
       byte led;
