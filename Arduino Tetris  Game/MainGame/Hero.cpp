@@ -178,11 +178,10 @@ void Hero::Update(byte *gameStep,float *deltaTime,boolean (*data)[32][16],
             {
                 for(short j = 0 ; j < 4  ; j++)
                 {
-                    if((*tetris)[type][buffLRotate][j][i] != 0)
+                    if((*tetris)[type][buffLRotate][i][j] != 0)
                     {
-                        x = i;
-                        y = j;
-
+                    x = j;
+                    y = i;
                         if(posX + x < 0 ||posX + x > 15)
                         {
                             lrcount ++;
@@ -234,10 +233,10 @@ void Hero::Update(byte *gameStep,float *deltaTime,boolean (*data)[32][16],
                 {
 
 
-                    if((*tetris)[type][buffRRotate][j][i] != 0)
+                    if((*tetris)[type][buffRRotate][i][j] != 0)
                     {
-                        x = i;
-                        y = j;
+                       x = j;
+                      y = i;
                         if(posX + x < 0 || posX + x > 15)
                         {
                             rrcount ++;
